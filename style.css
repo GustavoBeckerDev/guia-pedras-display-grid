@@ -133,11 +133,14 @@ main {
         width: 100%;
         max-width: 600px; /* Garante que o formulário não ultrapasse a tela */
         margin: 0 auto; /* Centraliza o formulário */
+        padding: 0 10px;
     }
 
     .header input {
         width: 100%;
         max-width: 100%; /* Impede que o input ultrapasse a tela */
+        padding: 8px;
+        margin: 0 10px;
     }
 
     .gallery-container {
@@ -159,6 +162,7 @@ main {
 @media (max-width: 480px) {
     .header input {
         padding: 6px; /* Ajusta o padding para dispositivos muito pequenos */
+        margin: 0 10px; /* Ajusta a margem lateral em telas muito pequenas */
     }
 
     .gallery-container {
