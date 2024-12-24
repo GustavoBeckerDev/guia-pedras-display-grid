@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Pedras Naturais</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <h1> Guia de Pedras Naturais </h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Digite o nome da pedra...">
+            <ul id="suggestions"></ul>
+            <button type="submit">Pesquisar</button>
+        </form>
+    </header>
+    <main>
+        <div class="gallery-container">
+            <figure class="item" id="agata">
+                <div class="image">
+                    <img src="img/1-agata.jpeg" alt="Ágata">
+                </div>
+                <div class="content">
+                    <h2>Ágata</h2>
+                    <p>Equilíbrio emocional, harmonia e autoconfiança</p>
+                </div>
+            </figure>
+            <figure class="item"id="agua-marinha">
+                <div class="image">
+                    <img src="img/2-aguamarinha.jpeg" alt="2-aguamarinha">
+                </div>
+                <div class="content">
+                    <h2>Água Marinha</h2>
+                    <p>Coragem e tranquilidade, acalma a mente e melhora a comunicação</p>
+                </div>
+            </figure>
+            <figure class="item"id="amazonita">
+                <div class="image">
+                    <img src="img/3-amazonita.jpeg" alt="amazonita">
+                </div>
+                <div class="content">
+                    <h2>Amazonita</h2>
+                    <p>Equilíbrio emocional, promove a calma e a verdade</p>
+                </div>
+            </figure>
+            <figure class="item" id="ametista">
+                <div class="image">
+                    <img src="img/4-ametista.jpeg" alt="ametista">
+                </div>
+                <div class="content">
+                    <h2>Ametista</h2>
+                    <p>Purificação e proteção espiritual, promove a paz mental</p>
+                </div>
+            </figure>
+            <figure class="item" id="ambar">
+                <div class="image">
+                    <img src="img/5-ambar.jpeg" alt="ambar">
+                </div>
+                <div class="content">
+                    <h2>Âmbar</h2>
+                    <p>Purificação e cura, favorece a vitalidade e a energia solar</p>
+                </div>
+            </figure>
+            <figure class="item" id="apatita">
+                <div class="image">
+                    <img src="img/6-apatita.jpeg" alt="apatita">
+                </div>
+                <div class="content">
+                    <h2>Apatita</h2>
+                    <p>Motivação e expressão, ajuda na comunicação e na expansão pessoal</p>
+                </div>
+            </figure>
+            <figure class="item" id="azurita">
+                <div class="image">
+                    <img src="img/7-azurita.jpeg" alt="azurita">
+                </div>
+                <div class="content">
+                    <h2>Azurita</h2>
+                    <p>Intuição e clarividência, abre a mente para novas ideias</p>
+                </div>
+            </figure>
+            <figure class="item" id="basalto">
+                <div class="image">
+                    <img src="img/8-basalto.jpeg" alt="basalto">
+                </div>
+                <div class="content">
+                    <h2>Basalto Vulcânico</h2>
+                    <p>Aterramento e força, favorece a estabilidade e a conexão com a terra</p>
+                </div>
+            </figure>
+            <figure class="item" id="bismuto">
+                <div class="image">
+                    <img src="img/9-bismuto.jpeg" alt="bismuto">
+                </div>
+                <div class="content">
+                    <h2>Bismuto</h2>
+                    <p>Transformação e mudança, estimula a criatividade e a independência</p>
+                </div>
+            </figure>
+            <figure class="item" id="bornita">
+                <div class="image">
+                    <img src="img/10-bornita.jpeg" alt="bornita">
+                </div>
+                <div class="content">
+                    <h2>Bornita</h2>
+                    <p>Alegria e tranformação, promove uma visão positiva da vida</p>
+                </div>
+            </figure>
+            <figure class="item" id="calcita">
+                <div class="image">
+                    <img src="img/11-calcita.jpeg" alt="calcita">
+                </div>
+                <div class="content">
+                    <h2>Calcita</h2>
+                    <p>Energia positiva e criatividade, estimula a confiança</p>
+                </div>
+            </figure>
+            <figure class="item" id="cianita">
+                <div class="image">
+                    <img src="img/12-ciantia.jpeg" alt="cianita">
+                </div>
+                <div class="content">
+                    <h2>Cianita Negra - Vassoura de Bruxa</h2>
+                    <p>Clareza mental e proteção, favorece a meditação e a comunicação espiritual</p>
+                </div>
+            </figure>
+            <figure class="item" id="cianita-azul">
+                <div class="image">
+                    <img src="img/13-cianitaazul.jpeg" alt="cianitaazul">
+                </div>
+                <div class="content">
+                    <h2>Cianita Azul</h2>
+                    <p>Conexão espiritual, promove a paz e a proteção</p>
+                </div>
+            </figure>
+            <figure class="item" id="charoite">
+                <div class="image">
+                    <img src="img/14-charoite.jpg" alt="charoite">
+                </div>
+                <div class="content">
+                    <h2>Charoita</h2>
+                    <p>Transformação espiritual, favorece a coragem e a aceitação</p>
+                </div>
+            </figure>
+            <figure class="item" id="citrino">
+                <div class="image">
+                    <img src="img/15-citrino.jpeg" alt="citrino">
+                </div>
+                <div class="content">
+                    <h2>Citrino</h2>
+                    <p>Prosperidade e sucesso, atrai abundância e confiança</p>
+                </div>
+            </figure>
+            <figure class="item" id="cornalina">
+                <div class="image">
+                    <img src="img/16-cornalina.jpeg" alt="cornalina">
+                </div>
+                <div class="content">
+                    <h2>Cornalina</h2>
+                    <p>Energia vital e criatividade, aumenta a motivação</p>
+                </div>
+            </figure>
+            <figure class="item" id="crisocola">
+                <div class="image">
+                    <img src="img/17-crisocola.jpeg" alt="crisocola">
+                </div>
+                <div class="content">
+                    <h2>Crisocola</h2>
+                    <p>Comunicação e cura emocional, favorece o equilíbrio e a expressão de sentimentos</p>
+                </div>
+            </figure>
+            <figure class="item" id="crisoprasio">
+                <div class="image">
+                    <img src="img/18-crisoprasio.jpeg" alt="crisopasio">
+                </div>
+                <div class="content">
+                    <h2>Crisoprásio</h2>
+                    <p>Renovação e esperança, traz energia do crescimento e cura</p>
+                </div>
+            </figure>
+            <figure class="item" id="dendrita">
+                <div class="image">
+                    <img src="img/19-dendrita.jpeg" alt="dendrita">
+                </div>
+                <div class="content">
+                    <h2>Dendrita</h2>
+                    <p>Crescimento interior, sabedoria, equilíbrio e harmonia</p>
+                </div>
+            </figure>
+            <figure class="item" id="enxofre">
+                <div class="image">
+                    <img src="img/20-enxofre.jpeg" alt="enxofre">
+                </div>
+                <div class="content">
+                    <h2>Enxofre</h2>
+                    <p>Absorve a negatividade, traz compreensão e bloqueia pensamentos negativos</p>
+                </div>
+            </figure>
+            <figure class="item" id="esmeralda">
+                <div class="image">
+                    <img src="img/21-esmeralda.jpeg" alt="esmeralda">
+                </div>
+                <div class="content">
+                    <h2>Esmeralda</h2>
+                    <p>Amor e cura, fortalece os relacionamentos e a compaixão</p>
+                </div>
+            </figure>
+            <figure class="item" id="fluorita">
+                <div class="image">
+                    <img src="img/22-fluorita.jpeg" alt="fluorita">
+                </div>
+                <div class="content">
+                    <h2>Fluorita</h2>
+                    <p>Proteção e clareza mental, ajuda a organizar pensamentos</p>
+                </div>
+            </figure>
+            <figure class="item" id="galena">
+                <div class="image">
+                    <img src="img/23-galena.jpeg" alt="galena">
+                </div>
+                <div class="content">
+                    <h2>Galena</h2>
+                    <p>Aterramento e proteção, ajuda a manter a estabilidade energética</p>
+                </div>
+            </figure>
+            <figure class="item" id="granada">
+                <div class="image">
+                    <img src="img/24-granada.jpeg" alt="granada">
+                </div>
+                <div class="content">
+                    <h2>Granada</h2>
+                    <p>Vitalidade e regeneração, favorece a paixão e a coragem</p>
+                </div>
+            </figure>
+            <figure class="item" id="hematita">
+                <div class="image">
+                    <img src="img/25-hematita.jpeg" alt="hematita">
+                </div>
+                <div class="content">
+                    <h2>Hematita</h2>
+                    <p>Proteção e aterramento, dissipa energias negativas</p>
+                </div>
+            </figure>
+            <figure class="item" id="howlita">
+                <div class="image">
+                    <img src="img/26-howlita.jpeg" alt="howlita">
+                </div>
+                <div class="content">
+                    <h2>Howlita</h2>
+                    <p>Calma e esíritualidade, promove a paz e a serenidade</p>
+                </div>
+            </figure>
+            <figure class="item" id="serpentina">
+                <div class="image">
+                    <img src="img/27-serpentina.jpg" alt="serpentina">
+                </div>
+                <div class="content">
+                    <h2>Serpentina</h2>
+                    <p>Proteção e aterramento, promove força interior e autoconfiança</p>
+                </div>
+            </figure>
+            <figure class="item" id="jaspe-paisagem">
+                <div class="image">
+                    <img src="img/28-jaspepaisagem.jpeg" alt="jaspepaisagem">
+                </div>
+                <div class="content">
+                    <h2>Jaspe Paisagem</h2>
+                    <p>Criatividade e visão, inspira novas ideias e clareza mental</p>
+                </div>
+            </figure>
+            <figure class="item" id="jaspe-sangue-de-dragão">
+                <div class="image">
+                    <img src="img/29-jaspedragonblood.jpeg" alt="jaspesanguedragao">
+                </div>
+                <div class="content">
+                    <h2>Jaspe Sangue de Dragão</h2>
+                    <p>Coragem e vitalidade, promove a cura e o equilíbrio energético</p>
+                </div>
+            </figure>
+            <figure class="item" id="jaspe-vermelha">
+                <div class="image">
+                    <img src="img/30-redjasper.jpeg" alt="jaspe vermelha">
+                </div>
+                <div class="content">
+                    <h2>Jaspe Vermelha</h2>
+                    <p>Estabilidade e aterramento, ajuda a manter a coragem</p>
+                </div>
+            </figure>
+            <figure class="item" id="kunzita">
+                <div class="image">
+                    <img src="img/31-kunzita.jpeg" alt="kunzita">
+                </div>
+                <div class="content">
+                    <h2>Kunzita</h2>
+                    <p>Amor e cura emocional, favorece a paz e o equilíbrio</p>
+                </div>
+            </figure>
+            <figure class="item" id="labradorita">
+                <div class="image">
+                    <img src="img/32-labradorita.jpeg" alt="labradorita">
+                </div>
+                <div class="content">
+                    <h2>Labradorita</h2>
+                    <p>Transformação e proteção, desperta a magia interior</p>
+                </div>
+            </figure>
+            <figure class="item" id="lepidolita">
+                <div class="image">
+                    <img src="img/33-lepidolita.jpeg" alt="lepidolita">
+                </div>
+                <div class="content">
+                    <h2>Lepidolita</h2>
+                    <p>Paz e tranquilidade, alivia o estresse e promove o equilíbrio emocional</p>
+                </div>
+            </figure>
+            <figure class="item" id="lapis-lazuli">
+                <div class="image">
+                    <img src="img/34-lapislazuli.jpg" alt="lapislazuli">
+                </div>
+                <div class="content">
+                    <h2>Lapis Lazuli</h2>
+                    <p>Intuição e clareza mental, favorece a expressão da verdade</p>
+                </div>
+            </figure>
+            <figure class="item" id="larimar">
+                <div class="image">
+                    <img src="img/35-larimar.jpeg" alt="larimar">
+                </div>
+                <div class="content">
+                    <h2>Larimar</h2>
+                    <p>Paz e cura emocional, conecta com a energia do mar</p>
+                </div>
+            </figure>
+            <figure class="item" id="malaquita">
+                <div class="image">
+                    <img src="img/36-malaquita.jpeg" alt="malaquita">
+                </div>
+                <div class="content">
+                    <h2>Malaquita</h2>
+                    <p>Transformação e proteção, estimula a mudança e a cura emocional</p>
+                </div>
+            </figure>
+            <figure class="item" id="morganita">
+                <div class="image">
+                    <img src="img/37-morganita.jpeg" alt="morganita">
+                </div>
+                <div class="content">
+                    <h2>Morganita</h2>
+                    <p>Amor divino e compaixão, promove a cura emocional profunda</p>
+                </div>
+            </figure>
+            <figure class="item" id="obsidiana">
+                <div class="image">
+                    <img src="img/38-obsidiana.jpeg" alt="obsidiana">
+                </div>
+                <div class="content">
+                    <h2>Obsidiana</h2>
+                    <p>Proteção e purificação, ajuda na introspecção e cura emocional</p>
+                </div>
+            </figure>
+            <figure class="item" id="olho-de-tigre">
+                <div class="image">
+                    <img src="img/39-olhodetigre.jpeg" alt="olhodetigre">
+                </div>
+                <div class="content">
+                    <h2>Olho de Tigre</h2>
+                    <p>Coragem e autoconfiança, manifesta a força interior</p>
+                </div>
+            </figure>
+            <figure class="item" id="onix">
+                <div class="image">
+                    <img src="img/40-onix.jpeg" alt="40-onix">
+                </div>
+                <div class="content">
+                    <h2>Onix</h2>
+                    <p>Proteção e força interior, favorece a estabilidade emocional</p>
+                </div>
+            </figure>
+            <figure class="item" id="opala">
+                <div class="image">
+                    <img src="img/41-opala.jpeg" alt="opala">
+                </div>
+                <div class="content">
+                    <h2>Opala</h2>
+                    <p>Criatividade e inspiração, desperta a espontaneidade e originalidade</p>
+                </div>
+            </figure>
+            <figure class="item" id="pedra-da-lua">
+                <div class="image">
+                    <img src="img/42-pedradalua-moonstone.jpeg" alt="pedradalua-moonstone">
+                </div>
+                <div class="content">
+                    <h2>Pedra da Lua - MoonStone</h2>
+                    <p>Intuição e conexão emocional, ligada aos ciclos femininos</p>
+                </div>
+            </figure>
+            <figure class="item" id="pirita">
+                <div class="image">
+                    <img src="img/43-pirita.jpeg" alt="pirita">
+                </div>
+                <div class="content">
+                    <h2>Pirita</h2>
+                    <p>Abundância e prosperidade, atrai riqueza e proteção</p>
+                </div>
+            </figure>
+            <figure class="item" id="quartzo-azul">
+                <div class="image">
+                    <img src="img/44-quartzoazul.jpeg" alt="quartzoazul">
+                </div>
+                <div class="content">
+                    <h2>Quartzo Azul</h2>
+                    <p>Serenidade e clareza, promove a tranquilidade e a comunicação</p>
+                </div>
+            </figure>
+            <figure class="item" id="quartzo-cereja">
+                <div class="image">
+                    <img src="img/45-quartzocereja.jpeg" alt="quartzocereja">
+                </div>
+                <div class="content">
+                    <h2>Quartzo Cereja - Cherry</h2>
+                    <p>Energia vital e otimismo, promove a alegria e o amor</p>
+                </div>
+            </figure>
+            <figure class="item" id="quartzo-cristal">
+                <div class="image">
+                    <img src="img/46-quartzocristal.jpeg" alt="cristal">
+                </div>
+                <div class="content">
+                    <h2>Quartzo Cristal</h2>
+                    <p>Potencializador de energias, clareza mental e espiritual</p>
+                </div>
+            </figure>
+            <figure class="item" id="quartzo-rosa">
+                <div class="image">
+                    <img src="img/47-quartzorosa.jpeg" alt="quartzorosa">
+                </div>
+                <div class="content">
+                    <h2>Quartzo Rosa</h2>
+                    <p>Amor incondicional, promove a cura emocional e fortalece o amor próprio</p>
+                </div>
+            </figure>
+            <figure class="item" id="rodocrosita">
+                <div class="image">
+                    <img src="img/48-rodocrosita.jpeg" alt="rodocrosita">
+                </div>
+                <div class="content">
+                    <h2>Rodocrosita</h2>
+                    <p>Cura emocional e amor próprio, favorece a autoestima e a compaixão</p>
+                </div>
+            </figure>
+            <figure class="item" id="rodonita">
+                <div class="image">
+                    <img src="img/49-rodonita.jpeg" alt="rodonita">
+                </div>
+                <div class="content">
+                    <h2>Rodonita</h2>
+                    <p>Cura emocional, promove o perdão e o amor pela família</p>
+                </div>
+            </figure>
+            <figure class="item" id="sodalita">
+                <div class="image">
+                    <img src="img/50-sodalita.jpeg" alt="sodalita">
+                </div>
+                <div class="content">
+                    <h2>Sodalita</h2>
+                    <p>Energia intelectual e comunicação, estimula a racionalidade e intuição</p>
+                </div>
+            </figure>
+            <figure class="item" id="topazio-imperial">
+                <div class="image">
+                    <img src="img/51-topázio.jpeg" alt="topázio">
+                </div>
+                <div class="content">
+                    <h2>Topázio Imperial</h2>
+                    <p>Alegria e abundância, promove a confiança e a autovalorização</p>
+                </div>
+            </figure>
+            <figure class="item" id="turmalina-negra">
+                <div class="image">
+                    <img src="img/52-turmalinanegra.jpeg" alt="turmalinanegra">
+                </div>
+                <div class="content">
+                    <h2>Turmalina negra</h2>
+                    <p>Bloqueio de energias negativas, proteção contra poluição eletromagnética</p>
+                </div>
+            </figure>
+            <figure class="item" id="turmalina-rosa">
+                <div class="image">
+                    <img src="img/53-turmalinarosa.jpeg" alt="turmalinarosa">
+                </div>
+                <div class="content">
+                    <h2>Turmalina Rosa</h2>
+                    <p>Amor e compaixão, auda na cura de todas as feridas</p>
+                </div>
+            </figure>
+            <figure class="item" id="turquesa">
+                <div class="image">
+                    <img src="img/54-turquesa.jpeg" alt="turquesa">
+                </div>
+                <div class="content">
+                    <h2>Turquesa</h2>
+                    <p>Cura e proteção, considerada um amuleto contra males</p>
+                </div>
+            </figure>
+            <figure class="item" id="zoizita-com-rubi">
+                <div class="image">
+                    <img src="img/55-zoisita.jpeg" alt="zoizita">
+                </div>
+                <div class="content">
+                    <h2>Zoizita com Rubi</h2>
+                    <p>Vitalidade e coragem, une a energia do amor e da força</p>
+                </div>
+            </figure>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
