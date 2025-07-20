@@ -64,19 +64,18 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    position: absolute; /* Posiciona o elemento em relação ao container pai */
-    top: calc(100% + 4px); /* Coloca o elemento logo abaixo do campo de entrada */
+    position: absolute;
+    top: calc(100% + 4px);
     background: white;
     border: 2px solid black;
-    max-height: 150px; /* Limita a altura máxima da lista */
-    overflow-y: auto; /* Adiciona rolagem se necessário */
-    width: 100%; /* Faz a largura da lista acompanhar o campo */
-    z-index: 1000; /* Garante que a lista fique acima de outros elementos */
-    display: none; /* Esconde a lista por padrão */
+    max-height: 150px; 
+    overflow-y: auto; 
+    width: 100%; 
+    z-index: 1000; 
+    display: none; 
     box-sizing: border-box;
 }
 
-/* Exibir a lista somente quando houver conteúdo */
 #suggestions li {
     padding: 8px;
     cursor: pointer;
@@ -86,7 +85,6 @@ body {
     background-color: violet;
 }
 
-/* Reexibir a lista quando houver sugestões */
 #suggestions.active {
     display: block;
 } 
@@ -105,8 +103,8 @@ main {
 }
 .item {
     display: block;
-    align-items: center; /* Alinha imagem e descrição no centro verticalmente */
-    gap: 20px; /* Espaço entre imagem e descrição */
+    align-items: center; 
+    gap: 20px; 
     padding: 10px;
     background: linear-gradient(to bottom right, white 1%, purple 99%);
     border: 3px solid black;
@@ -131,14 +129,14 @@ main {
 @media (max-width: 768px) {
     .header form {
         width: 100%;
-        max-width: 600px; /* Garante que o formulário não ultrapasse a tela */
-        margin: 0 auto; /* Centraliza o formulário */
+        max-width: 600px; 
+        margin: 0 auto; 
         padding: 0 10px;
     }
 
     .header input {
         width: 100%;
-        max-width: 100%; /* Impede que o input ultrapasse a tela */
+        max-width: 100%;
         padding: 8px;
         margin: 0 10px;
     }
@@ -161,8 +159,8 @@ main {
 
 @media (max-width: 480px) {
     .header input {
-        padding: 6px; /* Ajusta o padding para dispositivos muito pequenos */
-        margin: 0 10px; /* Ajusta a margem lateral em telas muito pequenas */
+        padding: 6px;
+        margin: 0 10px;
     }
 
     .gallery-container {
